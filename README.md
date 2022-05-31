@@ -23,7 +23,7 @@ For this project to run, you would need to install below 3 dependencies on your 
 For easiest way to getting started, extract this project and open it from Eclipse.
 > Then run test in : test -> java -> TestSamsungTV class .  
 
-Note: There is an excel sheet named TestData.xlsx in which we can specify any brand and number of HighestPrice
+Note: There is an excel sheet named TestData.xlsx in which we can specify any brand and number of HighestPrice.
        According to this assignment I have mentioned as Samsung and 2
 
 ## Success
