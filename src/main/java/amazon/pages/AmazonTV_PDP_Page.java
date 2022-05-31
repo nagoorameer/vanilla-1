@@ -39,8 +39,8 @@ public class AmazonTV_PDP_Page extends ProjectMethods {
 	}
 	
 	public AmazonTV_PDP_Page checkIfDescriptionPresent() {
-		//assertFalse(eleDescriptions.isEmpty());
-		verifyDisplayed(eleDescription);
+		assertFalse(verifyElementsIsPresent(eleDescriptions));
+		//verifyDisplayed(eleDescription);	
 		return this;
 	}
 	

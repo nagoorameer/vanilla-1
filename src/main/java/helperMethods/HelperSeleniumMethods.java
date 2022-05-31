@@ -321,6 +321,23 @@ public class HelperSeleniumMethods extends Reporter implements HelperMethods{
 		}
 		return false; 
 	}
+	
+	
+	
+	public boolean verifyElementsIsPresent(List<WebElement> ele) {
+		try {
+			if(ele.size()>0) {
+				reportStep("The element "+ele+" is visible","PASS");
+				return true;
+			} else {
+				reportStep("The element "+ele+" is not visible","FAIL");
+				return false;
+			}
+		} catch (WebDriverException e) {
+			reportStep("WebDriverException : "+e.getMessage(), "FAIL");
+		}
+		return false; 
+	}
 
 	public void switchToWindow(int index) {
 		try {
