@@ -19,7 +19,8 @@ public class AmazonTelevisionPage extends ProjectMethods {
 
 
 	public AmazonTelevisionPage assertThatTelevisionPageTitleIsCorrect() throws InterruptedException {
-		verifyTitle("Buy the latest LED TVs, 4K TVs and Android TVs online at Best Prices in India-Amazon.in | Shop by size, price, features and more");
+		//verifyTitle("Buy the latest LED TVs, 4K TVs and Android TVs online at Best Prices in India-Amazon.in | Shop by size, price, features and more");
+		verifyPartialTitle("Amazon.in");
 		return this;
 	}
 

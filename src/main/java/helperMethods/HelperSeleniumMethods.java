@@ -210,6 +210,9 @@ public class HelperSeleniumMethods extends Reporter implements HelperMethods{
 	}
 
 	public boolean verifyTitle(String title) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.titleIs(title));	
 		boolean bReturn =false;
 		try {
 			if(getTitle().equals(title)) {
